@@ -52,6 +52,8 @@ are mandatory unless marked as optional.
 
 Binary source to compare to. In most cases the official binary download server
 of a distribution. May also be a binary repository by a third party.
+The structure of the website is project-defined, and needs to be a mirrorable
+URL.
 
 #### Example property
 
@@ -167,15 +169,18 @@ further evaluation. The allowed fields are described below.
 ### `buildlog_uri` (string) [optional]
 
 URI to the buildlog created during the binary artifact creation.
+The single file at the end of this URI is expected to be GZ-compressed.
 
 ### `diffoscope_html_uri`, `diffoscope_json_uri` (string)
 
 URI to the diffoscope html and json output based on the origin file and the
 rebuild binary.
+The single file at the end of this URI is expected to be GZ-compressed.
 
 ### `binary_uri` (string) [optional]
 
 URI to the created files to allow manual inspection.
+The URI must be a mirror-able URL, and allow for user browsing.
 
 ### `build_date` (integer)
 
