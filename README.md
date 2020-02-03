@@ -19,6 +19,10 @@ The result file has to be gziped.
 {
 	"origin_uri": "",
 	"origin_name": "",
+	"rebuilder": {
+		"name" "",
+		"uri": ""
+	},
 	"results": [
 		{
 			"suite": "",
@@ -70,6 +74,29 @@ distribution identifier in the database.
 * `debian`
 * `openwrt`
 * `docker`
+
+### `rebuilder` (dictionary)
+
+Information about the rebuilder that provided this data.
+The allowed fields are described below.
+
+### `name` (string)
+
+The human-readable descriptive name of the rebuilder.
+
+#### Example property
+
+* `Debian official rebuilder`
+* `Foobar Corp. validation division`
+
+### `uri` (string)
+
+Indication to a human-readable website describing the rebuilder.
+
+#### Example property
+
+* `https://tests.reproducible-builds.org/debian/`
+* `https://validation.foobar-corp.com/openwrt/`
 
 ### `results` (list)
 
