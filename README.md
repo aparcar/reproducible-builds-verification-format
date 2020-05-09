@@ -26,7 +26,6 @@ The result file has to be gziped.
 			"target": ""
 			"name": "",
 			"version": "",
-			"cpe": "",
 			"status" "",
 			"artifacts": {
 				"buildlog_uri": "",
@@ -127,20 +126,6 @@ should not contain any version information.
 * `tmux`
 * `procd`
 * `firefox`
-
-### `cpe` (string) [optional]
-
-Search Common Platform Enumerations. The CPE of the binary if applicable. This
-is mostly relevant for packages and may stay empty for other binary files like
-iso images. The CPE string may only contain vendor and product identifier,
-without any additional version information as the downstream version used may
-does not match with upstream due to patches. CPE in version 2.3 should be used.
-Offering this information allows interpretability between distributions.
-
-#### Example property
-
-* `cpe:2.3:a:mozilla:firefox:*:*:*:*:*:*:*:*`
-* `cpe:2.3:a:haxx:curl:*:*:*:*:*:*:*:*`
 
 ### `status` (enum)
 
