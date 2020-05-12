@@ -15,33 +15,29 @@ The result file has to be gziped.
 
 ## Results file skeleton
 
-```
-{
-	"origin_uri": "",
-	"origin_name": "",
-	"results": [
-		{
-			"suite": "",
-			"component": ""
-			"target": ""
-			"name": "",
-			"version": "",
-			"cpe": "",
-			"status" "",
-			"artifacts": {
-				"buildlog_uri": "",
-				"diffoscope_html_uri": "",
-				"diffoscope_json_uri": "",
-				"binary_uri": ""
-
-			},
-			"build_date": 0,
-			"build_duration": 0
-		}
-
-	]
-}
-```
+    {
+    	"origin_uri": "",
+    	"origin_name": "",
+    	"results": [
+    		{
+    			"suite": "",
+    			"component": "",
+    			"target": "",
+    			"name": "",
+    			"version": "",
+    			"cpe": "",
+    			"status": "",
+    			"artifacts": {
+    				"buildlog_uri": "",
+    				"diffoscope_html_uri": "",
+    				"diffoscope_json_uri": "",
+    				"binary_uri": ""
+    			},
+    			"build_date": 0,
+    			"build_duration": 0
+    		}
+    	]
+    }
 
 ## Field definition
 
@@ -55,9 +51,9 @@ of a distribution. May also be a binary repository by a third party.
 
 #### Example property
 
-* `http://ftp.us.debian.org/debian/`
-* `https://downloads.openwrt.org/`
-* `https://download.docker.com/`
+-   `http://ftp.us.debian.org/debian/`
+-   `https://downloads.openwrt.org/`
+-   `https://download.docker.com/`
 
 ### `origin_name` (string)
 
@@ -67,13 +63,13 @@ distribution identifier in the database.
 
 #### Example property
 
-* `debian`
-* `openwrt`
-* `docker`
+-   `debian`
+-   `openwrt`
+-   `docker`
 
 ### `results` (list)
 
-Contains dictionaries with test results. 
+Contains dictionaries with test results.
 
 ### `suite` (string)
 
@@ -82,9 +78,9 @@ available branches in which a binary is distributed by the same distribution.
 
 #### Example property
 
-* `buster`
-* `19.07`
-* `rolling`
+-   `buster`
+-   `19.07`
+-   `rolling`
 
 ### `component` (string)
 
@@ -93,10 +89,10 @@ available per suite.
 
 #### Example property
 
-* `main`
-* `core`
-* `community`
-* `iso`
+-   `main`
+-   `core`
+-   `community`
+-   `iso`
 
 ### `target` (enum)
 
@@ -112,9 +108,9 @@ A complete list TBA.
 
 #### Example property
 
-* `x86_64-unknown-linux-gnu`
-* `mipsel-unknown-linux-musl`
-* `aarch64-linux-android`
+-   `x86_64-unknown-linux-gnu`
+-   `mipsel-unknown-linux-musl`
+-   `aarch64-linux-android`
 
 ### `name` (string)
 
@@ -124,9 +120,9 @@ should not contain any version information.
 
 #### Example property
 
-* `tmux`
-* `procd`
-* `firefox`
+-   `tmux`
+-   `procd`
+-   `firefox`
 
 ### `cpe` (string) [optional]
 
@@ -139,8 +135,8 @@ Offering this information allows interpretability between distributions.
 
 #### Example property
 
-* `cpe:2.3:a:mozilla:firefox:*:*:*:*:*:*:*:*`
-* `cpe:2.3:a:haxx:curl:*:*:*:*:*:*:*:*`
+-   `cpe:2.3:a:mozilla:firefox:*:*:*:*:*:*:*:*`
+-   `cpe:2.3:a:haxx:curl:*:*:*:*:*:*:*:*`
 
 ### `status` (enum)
 
@@ -149,15 +145,15 @@ of statues to chose from.
 
 All states are explained blow:
 
-* `reproducible`: recreated binary has the same checksum
-* `unreproducible`: binary compiles but results in a different checksum
-* `buildfail`: the creation was not successful and the build system failed
-* `notfound`: the sources required for the package are not available (anymore)
-* `timeout`: the build exceeded a specified time limit
-* `blocked`: the binary where actively excluded from testing
-* `notforus`: the binary is not compatible with the active target
-* `untested`: the binary has not yet been tested
-* `depwait`: the binary depends on an to be created other binary
+-   `reproducible`: recreated binary has the same checksum
+-   `unreproducible`: binary compiles but results in a different checksum
+-   `buildfail`: the creation was not successful and the build system failed
+-   `notfound`: the sources required for the package are not available (anymore)
+-   `timeout`: the build exceeded a specified time limit
+-   `blocked`: the binary where actively excluded from testing
+-   `notforus`: the binary is not compatible with the active target
+-   `untested`: the binary has not yet been tested
+-   `depwait`: the binary depends on an to be created other binary
 
 ### `artifacts` (dictionary)
 
