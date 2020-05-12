@@ -1,0 +1,50 @@
+{
+	"origin_uri": "https://downloads.cdn.openwrt.org",
+	"origin_name": "openwrt",
+	"rebuilder": {
+		"maintainer": "Paul Spooren",
+		"contact": "mail@aparcar.org",
+		"name": "aparcar-openwrt-gitlab",
+		"uri": "https://gitlab.com/aparcar/rebuild/-/jobs/"
+	},
+	"results": [{
+		"suite": "SNAPSHOT",
+		"component": "images",
+		"target": "ramips/mt7620",
+		"build_date": 1589261551,
+		"name": "openwrt-ramips-mt7620-aigale_ai-br100-initramfs-kernel.bin",
+		"version": "300b7fe85a",
+		"cpe": "",
+		"status": "unreproducible",
+		"artifacts": {
+			"diffoscope_html_uri": "snapshots/targets/ramips/mt7620/openwrt-ramips-mt7620-aigale_ai-br100-initramfs-kernel.bin.html",
+			"binary_uri": "snapshots/targets/ramips/mt7620/openwrt-ramips-mt7620-aigale_ai-br100-initramfs-kernel.bin"
+		}
+	}, {
+		"suite": "SNAPSHOT",
+		"component": "images",
+		"target": "ramips/mt7620",
+		"build_date": 1589261551,
+		"name": "openwrt-ramips-mt7620-aigale_ai-br100-squashfs-sysupgrade.bin",
+		"version": "300b7fe85a",
+		"cpe": "",
+		"status": "unreproducible",
+		"artifacts": {
+			"diffoscope_html_uri": "snapshots/targets/ramips/mt7620/openwrt-ramips-mt7620-aigale_ai-br100-squashfs-sysupgrade.bin.html",
+			"binary_uri": "snapshots/targets/ramips/mt7620/openwrt-ramips-mt7620-aigale_ai-br100-squashfs-sysupgrade.bin"
+		}
+	}, {
+		"suite": "SNAPSHOT",
+		"component": "images",
+		"target": "ramips/mt7620",
+		"build_date": 1589261551,
+		"name": "openwrt-ramips-mt7620-alfa-network_ac1200rm-initramfs-kernel.bin",
+		"version": "300b7fe85a",
+		"cpe": "",
+		"status": "unreproducible",
+		"artifacts": {
+			"diffoscope_html_uri": "snapshots/targets/ramips/mt7620/openwrt-ramips-mt7620-alfa-network_ac1200rm-initramfs-kernel.bin.html",
+			"binary_uri": "snapshots/targets/ramips/mt7620/openwrt-ramips-mt7620-alfa-network_ac1200rm-initramfs-kernel.bin"
+		}
+	}]
+}
