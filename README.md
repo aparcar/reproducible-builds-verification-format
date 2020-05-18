@@ -33,7 +33,7 @@ The result file has to be gziped.
     				"diffoscope_json_uri": "",
     				"binary_uri": ""
     			},
-    			"build_date": 0,
+    			"build_date": "2020-05-18T21:13:44Z",
     			"build_duration": 0
     		}
     	]
@@ -175,7 +175,8 @@ URI to the created files to allow manual inspection.
 
 ### `build_date` (integer)
 
-UNIX time stamp of the date and time the binary was created.
+[ISO 8061](https://en.wikipedia.org/wiki/ISO_8601) timestamp with UTC timezone
+of the date and time the binary was created.
 
 ### `build_duration` (integer) [optional]
 
